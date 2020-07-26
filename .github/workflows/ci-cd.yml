@@ -1,0 +1,18 @@
+name: CI/CD
+on: [push]
+
+jobs:
+  test:
+    name: Testing
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Install cookiecutter
+        run: pip install cookiecutter
+      - name: Run tests
+        run: bash ./scripts/test.sh
