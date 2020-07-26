@@ -144,6 +144,7 @@ After using this generator, your new project (the directory created) will contai
 
 ### Latest Changes
 
+- Use Github Actions for CI/CD. Remove Gitlab CI. PR. [#6](https://github.com/elben10/ml-full-stack-fastapi-postgresql/pull/6)
 - Update License. Use github actions instead of Travis. PR [#4](https://github.com/elben10/ml-full-stack-fastapi-postgresql/pull/4)
 - Update issue-manager. PR [#211](https://github.com/tiangolo/full-stack-fastapi-postgresql/pull/211).
 - Add [GitHub Sponsors](https://github.com/sponsors/tiangolo) button. PR [#201](https://github.com/tiangolo/full-stack-fastapi-postgresql/pull/201).
