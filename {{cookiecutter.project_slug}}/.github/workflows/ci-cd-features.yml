@@ -1,0 +1,19 @@
+name: CI/CD
+on:
+  push:
+    branches:
+      - "*"
+      - "!master"
+      - "!production"
+
+jobs:
+  test:
+    name: "Testing"
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Run testing script
+        run: bash ./scripts/test.sh
+        env:
+          TRAEFIK_PUBLIC_NETWORK_IS_EXTERNAL: false
